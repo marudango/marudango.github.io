@@ -19,13 +19,23 @@ body{
     max-width: 1130px;
     margin:0 auto;
 }
-h1, h2, h3{
+h1{
     text-align: center;
     color: #C2995B;
+    font-size: 50px;
 }
-h5{
+h2{
     text-align: center;
-    position: relative;
+    color: #C2995B;
+    font-size: 38px;
+}
+#aboutme h1{
+    font-size: 60px;
+    color:rgb(250, 237, 210)
+}
+#aboutme h2{
+    font-size: 40px;
+    color:rgb(250, 237, 210)
 }
 /* 最近情報 */
 
@@ -82,12 +92,6 @@ h5{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
-#aboutme h1{
-    font-size: 60px;
-}
-#aboutme h3{
-    font-size: 40px;
-}
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23C2995B'%2F%3E%3C%2Fsvg%3E");
@@ -114,6 +118,13 @@ h5{
     width: 700px;
     height: 700px;
     position: relative;
-    top: 30px;
-    left: 370px;
+    left: calc(50% - 350px);
+}
+#my_origin{
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: calc(50% - 120px);
+    top: calc(50% - 120px);
+    font-size: 1.2rem;
 }
