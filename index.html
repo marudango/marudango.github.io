@@ -42,7 +42,7 @@
             <div class="swiper-button-prev"></div>
         </div>
         <div class="box">
-            <div class="btn btn-warning btn-lg" id="welcomebtn">進入首頁</div>
+            <div class="btn btn-warning btn-lg" id="welcomebtn">進入網站</div>
         </div>
     </div>
 
@@ -53,7 +53,6 @@
             <i class="fas fa-arrow-circle-up fa-3x" style="position:fixed;right:2vw;bottom:5vh;z-index:99;color:#C2995B"></i>
         </a>
         
-        <div class="box" id="news"></div>
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar" style="background: #C2995B;display:none;">
             <a class="navbar-brand" href="">Sinfonia</a>
@@ -73,11 +72,11 @@
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            本店餐點
+                            商品專區
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#menu" id="month-bread">本月麵包</a>
-                            <a class="dropdown-item" href="#menu" id="month-cake">本月蛋糕</a>
+                            <a class="dropdown-item" href="#menu" id="month-bread">麵包</a>
+                            <a class="dropdown-item" href="#menu" id="month-cake">蛋糕</a>
 
                             <div class="dropdown-divider"></div>
 
@@ -91,11 +90,27 @@
             </div>
         </nav>
 
+        <div style="width:100%;height:100vh;position: relative;">
+            <div id="sakuratree"></div>
+            <div id="circlebox">
+                <img id="mycircle" src="img/circle.png" alt="">
+                <div id="my_origin">
+                    <p style="color: #C2995B;">Sinfonia，是Symphony的義大利語，源於希臘文的συμφωνία，為交響曲之意。</p>
+                    <br>
+                    <p style="color: #C2995B;">望本店的麵包能像音樂合奏一般，讓吃到本店麵包的人感受到味覺上的饗宴...</p>
+                </div>
+            </div>
+        </div>
+        
 
 
+
+
+
         <br>
         <br>
         <br>
+        <div id="news" style="height:56px"></div>
         <h1>*最新情報*</h1>
         <br>
         <br>
@@ -104,7 +119,10 @@
 
         <!-- 用bootstrap寫的卡片 -->
         <!-- 最新情報 -->
-        <div class="box">
+        <div class="box" id="allcard">
+            <div style="width:1130px;height:500px;background-color:pink;" id="cardcontent1"></div>
+            <div style="width:1130px;height:500px;background-color:blue;" id="cardcontent2"></div>
+            <div style="width:1130px;height:500px;background-color:gray;" id="cardcontent3"></div>
             <div class="row" style="position:relative;left:3%">
                 <div class="col-md-4">
                     <div class="card" id="card1" style="width: 18rem;">
@@ -112,7 +130,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Love母親節蛋糕預購</h5>
                             <p class="card-text">一年一度的母親節又要到了，在這特別的節日裡，是不是該為我們的母親，送上一份感恩的謝禮呢...</p>
-                            <a href="#box222" class="btn btn-warning" data-lightbox="image1">閱讀更多...</a>
+                            <div class="btn btn-warning" id="cardbutton1">內文詳情...</div>
                         </div>
                     </div>
                 </div>
@@ -122,7 +140,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Love母親節蛋糕預購</h5>
                             <p class="card-text">一年一度的母親節又要到了，在這特別的節日裡，是不是該為我們的母親，送上一份感恩的謝禮呢...</p>
-                            <a href="#box222" class="btn btn-warning">閱讀更多...</a>
+                            <div class="btn btn-warning" id="cardbutton2">內文詳情...</div>
                         </div>
                     </div>
                 </div>
@@ -131,8 +149,8 @@
                         <img class="card-img-top" src="/img/6.jpg" alt="Card image cap" style="height:190px">
                         <div class="card-body">
                             <h5 class="card-title">Afternoon Tea 時間</h5>
-                            <p class="card-text">風和日麗的下午，稍微停下腳步，來我們店坐坐，讓自己休息一下，沖個電...</p>
-                            <a href="#box222" class="btn btn-warning">內文詳情...</a>
+                            <p class="card-text">風和日麗的下午，稍微停下腳步，來我們店坐坐，讓自己休息一下，充個電...</p>
+                            <div class="btn btn-warning" id="cardbutton3">內文詳情...</div>
                         </div>
                     </div>
                 </div>
@@ -140,15 +158,6 @@
         </div>
 
         <br>
-
-        <div style="width:100%;height:700px;position: relative;">
-            <img id="mycircle" src="img/circle.png" alt="">
-            <!-- <img src="img/circle-first.png" alt=""> -->
-            <div id="my_origin">
-                <p style="color: #C2995B;">Sinfonia，是Symphony的義大利語，源於希臘文的συμφωνία，為交響曲之意。</p><br>
-                <p style="color: #C2995B;">望本店的麵包能像音樂合奏一般，讓吃到本店麵包的人感受到味覺上的饗宴...</p>
-            </div>
-        </div>
         
 
         <!-- 關於本店 -->
@@ -171,7 +180,7 @@
                         <h2>周六至周日 : 12:00~17:00</h2>
                         <br>
                         <br>
-                        <h1>點擊一下查看本月放假日期</h1>
+                        <h1>點擊(一下)查看本月放假日期</h1>
                         <br>
                         <br>
                     </div>
@@ -198,7 +207,7 @@
 
         <!-- 菜單 -->
         <div class="box" id="menu" style="height:56px"></div>
-        <h1>*本店餐點*</h1>
+        <h1>*商品專區*</h1>
         <br>
 
         <!-- 按鈕 -->
@@ -218,7 +227,7 @@
         <!-- swiper的輪播 麵包菜單 -->
         <!-- 點擊有lightbox效果 -->
         <div class="box" id="swiper-bread">
-            <h2>本月麵包</h2>
+            <h2>麵包</h2>
             <div class="swiper-container" id="swiper-container-bread">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -277,7 +286,7 @@
         <!-- swiper的輪播 蛋糕菜單 -->
         <!-- 點擊有lightbox效果 -->
         <div class="box" id="swiper-cake">
-            <h2>本月蛋糕</h2>
+            <h2>蛋糕</h2>
             <div class="swiper-container" id="swiper-container-cake">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -377,24 +386,24 @@
         <!-- 連絡我們 -->
         <div class="box" id="contact" style="height:56px"></div>
 
-        <div style="width:100%;height:336px;">
+        <div class="box" id="contactbox">
             <h1>*聯絡我們*</h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p>服務電話:04-22226666</p>
-            <p>客服信箱:services@sinfonia.com.tw</p>
-            <p>地址:404台中市北區台中市北區一中街96、98號 I PLAZA 購物商場內</p>
-            <hr>
-            <p style="font-size: 12px;">Copyright c 2018 Sinfonia all rights reserved</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- GoogleMap在這裡 -->
+                    <div id="map"></div>
+                </div>
+                <div class="col-sm-6">
+                    <p>服務電話:04-22226666</p>
+                    <p>客服信箱:services@sinfonia.com.tw</p>
+                    <p>地址:404台中市北區台中市北區一中街96、98號 I PLAZA 購物商場內</p>
+                </div>
+            </div>
         </div>
-
-        <!-- GoogleMap在這裡 -->
-        <div style="width:100%">
-            <div id="map"></div>
-        </div>
+        <br>
+        <p id="copyright" style="font-size: 12px;">Copyright c 2018 Sinfonia all rights reserved</p>
     </div>
+    
 
 
 
@@ -650,6 +659,109 @@
                     }
                 }
             });
+
+        // 啟動aos
+        AOS.init();
+
+        $(document).ready(() => {
+            $(function () {
+                $('body').click(function (evt) {
+                    if ($(evt.target).parents("#cardcontent1").length == 0 &&
+                        evt.target.id != "cardbutton1" && evt.target.id != "cardcontent1") {
+                        $('#cardcontent1').hide();
+                    }
+                    if ($("#cardcontent1").css("display") == "none" && $("#cardcontent2").css("display") == "none" && $("#cardcontent3").css("display") == "none") {
+                        $('#card1').fadeIn();
+                        $('#card2').fadeIn();
+                        $('#card3').fadeIn();
+                    }
+                });
+            });
+            $(function () {
+                $('body').click(function (evt) {
+                    if ($(evt.target).parents("#cardcontent2").length == 0 &&
+                        evt.target.id != "cardbutton2" && evt.target.id != "cardcontent2") {
+                        $('#cardcontent2').hide();
+                    }
+                    if ($("#cardcontent1").css("display") == "none" && $("#cardcontent2").css("display") == "none" && $("#cardcontent3").css("display") == "none") {
+                        $('#card1').fadeIn();
+                        $('#card2').fadeIn();
+                        $('#card3').fadeIn();
+                    }
+                });
+            });
+            $(function () {
+                $('body').click(function (evt) {
+                    if ($(evt.target).parents("#cardcontent3").length == 0 &&
+                        evt.target.id != "cardbutton3" && evt.target.id != "cardcontent3") {
+                        $('#cardcontent3').hide();
+                    }
+                    if ($("#cardcontent1").css("display") == "none" && $("#cardcontent2").css("display") == "none" && $("#cardcontent3").css("display") == "none") {
+                        $('#card1').fadeIn();
+                        $('#card2').fadeIn();
+                        $('#card3').fadeIn();
+                    }
+                });
+            });
+            
+            let $cardbutton1 = $('#cardbutton1');
+            let $cardbutton2 = $('#cardbutton2');
+            let $cardbutton3 = $('#cardbutton3');
+            let $cardcontent1 = $('#cardcontent1');
+            let $cardcontent2 = $('#cardcontent2');
+            let $cardcontent3 = $('#cardcontent3');
+            let $card1 = $('#card1');
+            let $card2 = $('#card2');
+            let $card3 = $('#card3');
+            $cardcontent1.hide();
+            $cardcontent2.hide();
+            $cardcontent3.hide();
+
+            $cardbutton1.on('click', () => {
+                $cardcontent1.fadeIn();
+                $cardcontent2.hide();
+                $cardcontent3.hide();
+                $card1.hide();
+                $card2.hide();
+                $card3.hide();
+            })
+
+            $cardbutton2.on('click', () => {
+                $cardcontent2.fadeIn();
+                $cardcontent1.hide();
+                $cardcontent3.hide();
+                $card1.hide();
+                $card2.hide();
+                $card3.hide();
+            })
+
+            $cardbutton3.on('click', () => {
+                $cardcontent3.fadeIn();
+                $cardcontent1.hide();
+                $cardcontent2.hide();
+                $card1.hide();
+                $card2.hide();
+                $card3.hide();
+            })
+            $cardcontent1.on('click', () => { 
+                $cardcontent1.hide();
+                $card1.fadeIn();
+                $card2.fadeIn();
+                $card3.fadeIn();
+            })
+            $cardcontent2.on('click', () => {
+                $cardcontent2.hide();
+                $card1.fadeIn();
+                $card2.fadeIn();
+                $card3.fadeIn();
+            })
+            $cardcontent3.on('click', () => {
+                $cardcontent3.hide();
+                $card1.fadeIn();
+                $card2.fadeIn();
+                $card3.fadeIn();
+            })
+        }); 
     </script>
 </body>
 
