@@ -5,13 +5,6 @@ body{
     font-family: 'cwTeXYen', sans-serif;
     position: relative;
 }
-
-/* containerbox */
-.box{
-    max-width: 1130px;
-    width: 1130px;
-    margin:0 auto;
-}
 h1{
     text-align: center;
     color: #C2995B;
@@ -24,80 +17,8 @@ h2{
     font-size: 38px;
     font-weight: bold;
 }
-#card1, #card2, #card3{
-    position: relative;
-    left: 50%;
-    transform: translate(-50%)
-}
-.col-md-4{
-    padding: 0;
-}
-/* 營業時間 */
-#aboutme{
-    cursor: pointer;
-    background-color: rgb(201, 161, 102);
-}
-#about1, #about2{
-    background-color: rgb(196, 137, 50);
-}
-#aboutme h1{
-    font-size: 60px;
-    color:rgb(250, 237, 210);
-}
-#aboutme h2{
-    font-size: 40px;
-    color:rgb(250, 237, 210);
-    font-weight: lighter;
-}
-#aboutme h3{
-    font-size: 50px;
-    color:rgb(250, 237, 210);
-    text-align: center;
-}
-#about2 h3{
-    color: gold;
-}
-#about1:hover{
-    background-color: chocolate;
-}
-#about1:hover h3{
-    color: gold;
-}
-#about2:hover{
-    background-color: chocolate;
-}
-#about2:hover h3{
-    font-weight: bold;
-}
-/* googlemap */
-#map {
-    height: 400px;
-    width: 100%;
-}
 
-/* 改bootatrap輪播按鍵大小 */
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-}
-.swiper-container{
-    clear: both;
-}
-.swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    color:#000;
-    opacity: 1;
-    background: rgba(0,0,0,0.2);
-}
-.swiper-pagination-bullet-active {
-    color:#fff;
-    background: gold
-}
+/* 入口頁 */
 .frontpage{
     background-color: lightgoldenrodyellow;
     width: 100%;
@@ -110,48 +31,21 @@ h2{
     transform: translate(-50%,-50%);
     z-index: 10;
 }
+
+/* 導覽列 */
 .navbar-brand{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 40px;
+    height: 40px;
+    padding-top: 0;
+}
 
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23C2995B'%2F%3E%3C%2Fsvg%3E");
-    left: 10px;
-    right: auto;
-}
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23C2995B'%2F%3E%3C%2Fsvg%3E");
-    right: 10px;
-    left: auto;
-}
-.lb-data .lb-caption{
-    font-size: 32px;
-    color:#C2995B;
-}
-.lb-data .lb-number{
-    font-size: 16px;
-}
-.card-img-top{
-    float: left;
-    overflow: hidden;
-}
-#copyright{
-    width:100%;
-    height:60px;
-    background-color: #C2995B;
-    text-align: center;
-    padding-top: 20px;
-}
-#copyright p{
-    margin:0;
-}
-.col-sm-6 p{
-    position: relative;
-    top: 40%;
-    transform: translate(0, -50%)
-}
+/* 櫻花和圓 */
 #sakuratree{
     position: relative; 
     width: 100%;
@@ -195,19 +89,172 @@ h2{
     transform: translate(-50%,-50%);
     font-size: 2.8vmin;
 }
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 40px;
-    height: 40px;
-    padding-top: 0;
+
+/* 主要內容包覆 */
+.box{
+    max-width: 1130px;
+    width: 1130px;
+    margin:0 auto;
 }
-@media screen and (max-width: 1130px) {
+
+/* 活動資訊卡片 */
+#card1, #card2, #card3{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%)
+}
+.col-md-4{
+    padding: 0;
+}
+.col-md-6{
+    padding-bottom: 30px;
+}
+
+/* 營業時間 */
+#aboutme{
+    cursor: pointer;
+    background-color: pink ;
+}
+#about1, #about2{
+    background-color: rgb(196, 137, 50);
+}
+#aboutme h1{
+    font-size: 60px;
+    color:rgb(250, 237, 210);
+}
+#aboutme h2{
+    font-size: 40px;
+    color:rgb(250, 237, 210);
+    font-weight: lighter;
+}
+#aboutme h3{
+    font-size: 50px;
+    color:rgb(250, 237, 210);
+    text-align: center;
+}
+#about2 h3{
+    color: gold;
+}
+#about1:hover{
+    background-color: chocolate;
+}
+#about1:hover h3{
+    color: gold;
+}
+#about2:hover{
+    background-color: chocolate;
+}
+#about2:hover h3{
+    font-weight: bold;
+}
+
+/* 商品專區 */
+.btn-outline-warning:not(:disabled):not(.disabled).active{
+    color: #fff;
+}
+.btn-border {
+    border: solid 2px;
+}
+.btn-outline-warning {
+    font-weight: bold;
+}
+.btn-outline-warning:hover, .btn-outline-warning:focus, .btn-outline-warning:active, .btn-outline-warning.active{
+    color: #fff;
+}
+.btn-outline-warning:not(:disabled):not(.disabled).active:focus, .btn-outline-warning:not(:disabled):not(.disabled):active:focus{
+    color: #fff;
+}
+/* 商品專區 分頁圖標 */
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color:#000;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+}
+.swiper-pagination-bullet-active {
+    color:#fff;
+    background: green
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin:0px 4px;
+}
+#swiper-container-bread, #swiper-container-cake, #swiper-container-other{
+    padding-bottom: 50px
+}
+
+/* 商品專區 左右按鍵 */
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23C2995B'%2F%3E%3C%2Fsvg%3E");
+    left: 10px;
+    right: auto;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23C2995B'%2F%3E%3C%2Fsvg%3E");
+    right: 10px;
+    left: auto;
+}
+
+/* lightbox內 字型 */
+.lb-data .lb-caption{
+    font-size: 32px;
+    color:#C2995B;
+}
+.lb-data .lb-number{
+    font-size: 16px;
+}
+
+/* googlemap */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* 聯絡資訊 */
+#contactbox .col-sm-6 p{
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%)
+}
+
+/* copyright */
+#copyright{
+    width:100%;
+    height:60px;
+    background-color: #C2995B;
+    text-align: center;
+    padding-top: 20px;
+}
+#copyright p{
+    margin:0;
+}
+
+
+@media screen and (max-width: 992px) {
     .box {
         width: 100vw;
     }
+    #swiper-container-bread .swiper-slide{
+        position: relative;
+        left: calc(50% - 150px);
+    }
+    #swiper-container-cake .swiper-slide{
+        position: relative;
+        left: calc(50% - 150px);
+    }
+    #swiper-container-other .swiper-slide{
+        position: relative;
+        left: calc(50% - 150px);
+    }
+    #copyright p{
+        font-size: 12px;
+    }
 }
-@media screen and (max-width: 1130px) {
-    body {
-        background-color: lightgreen;
+@media screen and (max-width: 768px) {
+    #copyright p{
+        font-size: 8px;
     }
 }

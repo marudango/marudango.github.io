@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>wireframe網站coding</title>
+    <title>Sinfonia</title>
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
@@ -25,13 +25,13 @@
         <div class="swiper-container" id="swiper-container1">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="/img/bakery3.jpg" style="width:100%; height:600px;">
+                    <img src="/img/bakery3.jpg" style="width:100%;">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/img/bakery2.jpg" style="width:100%; height:600px;">
+                    <img src="/img/bakery2.jpg" style="width:100%;">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/img/bakery1.jpg" style="width:100%; height:600px;">
+                    <img src="/img/bakery1.jpg" style="width:100%;">
                 </div>
             </div>
             <!-- Add Pagination -->
@@ -40,12 +40,8 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-        <div class="box">
-            <div class="btn btn-warning btn-lg" id="welcomebtn">進入網站</div>
-        </div>
+        <div class="btn btn-warning btn-lg" id="welcomebtn">進入網站</div>
     </div>
-
-
 
     <div class="backpage" id="backpage">
         <!-- <a href="#aboutmyshop">
@@ -110,10 +106,10 @@
         <!-- 最新情報 -->
         <div class="box" id="allcard">
             <div style="width:1130px;height:500px;background-color:pink;" id="cardcontent1"></div>
-            <div style="width:1130px;height:500px;background-color:blue;" id="cardcontent2"></div>
-            <div style="width:1130px;height:500px;background-color:gray;" id="cardcontent3"></div>
+            <div style="width:1130px;height:500px;background-color:pink;" id="cardcontent2"></div>
+            <div style="width:1130px;height:500px;background-color:pink;" id="cardcontent3"></div>
             <div class="row" style="position:relative;">
-                <div class="col-xs-12 col-lg-4" id="card1box">
+                <div class="col-md-6 col-lg-4" id="card1box">
                     <div class="card" id="card1" style="width: 18rem;">
                         <img class="card-img-top" src="/img/4.jpg" alt="Card image cap" style="height:190px">
                         <div class="card-body">
@@ -123,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-4" id="card2box">
+                <div class="col-md-6 col-lg-4" id="card2box">
                     <div class="card" id="card2" style="width: 18rem;">
                         <img class="card-img-top" src="/img/5.jpg" alt="Card image cap" style="height:190px">
                         <div class="card-body">
@@ -133,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-4" id="card3box">
+                <div class="col-md-6 col-lg-4" id="card3box">
                     <div class="card" id="card3" style="width: 18rem;">
                         <img class="card-img-top" src="/img/6.jpg" alt="Card image cap" style="height:190px">
                         <div class="card-body">
@@ -148,13 +144,13 @@
 
         <!-- 關於本店 -->
         <div class="box" style="height:56px"></div>
-        <div id="aboutmytime" style="height:56px;background-color: rgb(201, 161, 102);width:100%"></div>
+        <div id="aboutmytime" style="height:56px;background-color: pink;width:100%"></div>
 
-        <h1 style="height:56px;background-color: rgb(201, 161, 102);color:rgb(88, 55, 5);margin:0">*營業時間*</h1>
+        <h1 style="height:56px;background-color: pink;color:rgb(88, 55, 5);margin:0">*營業時間*</h1>
         <!-- 營業時間 -->
         <div class="swiper-container" id="aboutme">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <a class="swiper-slide" href="#aboutmytime" style="text-decoration: none;">
                     <div class="box" id="about1">
                         <br>
                         <br>
@@ -170,8 +166,8 @@
                         <br>
                         <br>
                     </div>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a class="swiper-slide" href="#aboutmytime" style="text-decoration: none;">
                     <div class="box" id="about2">
                         <br>
                         <br>
@@ -187,20 +183,20 @@
                         <br>
                         <br>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
         <!-- 菜單 -->
-        <div style="height:56px;background-color: rgb(201, 161, 102);width:100%"></div>
+        <div style="height:56px;background-color: pink;width:100%"></div>
         <div class="box" id="menu" style="height:56px"></div>
 
         <h1>*商品專區*</h1>
         <!-- 按鈕 -->
         <div class="box">
-            <div class="btn btn-warning" id="button-bread">麵包</div>
-            <div class="btn btn-warning" id="button-cake">蛋糕</div>
-            <div class="btn btn-warning" id="button-other">下午茶餐點</div>
+            <button class="btn btn-outline-warning btn-border active" id="button-bread">麵包</button>
+            <button class="btn btn-outline-warning btn-border" id="button-cake">蛋糕</button>
+            <button class="btn btn-outline-warning btn-border" id="button-other">下午茶餐點</button>
         </div>
         
         <!-- swiper的輪播 麵包菜單 -->
@@ -228,27 +224,10 @@
                         <a href="/img/bread-list/bread4.png" data-lightbox="image-bread" data-title="太陽的故鄉">
                             <img src="/img/bread-list/bread4.png" alt="" style="width:300px;height:200px">
                         </a>
-                    </div><div class="swiper-slide">
+                    </div>
+                    <div class="swiper-slide">
                         <a href="/img/bread-list/bread5.png" data-lightbox="image-bread" data-title="櫻桃甜心">
                             <img src="/img/bread-list/bread5.png" alt="" style="width:300px;height:200px">
-                        </a>
-                    </div><div class="swiper-slide">
-                        <a href="/img/bread-list/bread6.png" data-lightbox="image-bread" data-title="地瓜麵包">
-                            <img src="/img/bread-list/bread6.png" alt="" style="width:300px;height:200px">
-                        </a>
-                    </div><div class="swiper-slide">
-                        <a href="/img/bread-list/bread7.png" data-lightbox="image-bread" data-title="地瓜麵包">
-                            <img src="/img/bread-list/bread7.png" alt="" style="width:300px;height:200px">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="/img/bread-list/bread8.png" data-lightbox="image-bread" data-title="地瓜麵包">
-                            <img src="/img/bread-list/bread8.png" alt="" style="width:300px;height:200px">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="/img/bread-list/bread9.png" data-lightbox="image-bread" data-title="地瓜麵包">
-                            <img src="/img/bread-list/bread9.png" alt="" style="width:300px;height:200px">
                         </a>
                     </div>
                 </div>
@@ -259,8 +238,6 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
-
-
 
         <!-- swiper的輪播 蛋糕菜單 -->
         <!-- 點擊有lightbox效果 -->
@@ -343,16 +320,6 @@
                             <img src="/img/other-list/other5.jpeg" alt="" style="width:300px;height:200px">
                         </a>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="/img/other-list/other6.png" data-lightbox="image-other" data-title="地瓜饗宴">
-                            <img src="/img/other-list/other6.png" alt="" style="width:300px;height:200px">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="/img/other-list/other7.png" data-lightbox="image-other" data-title="地瓜饗宴">
-                            <img src="/img/other-list/other7.png" alt="" style="width:300px;height:200px">
-                        </a>
-                    </div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -363,7 +330,7 @@
         </div>
 
         <!-- 連絡我們 -->
-        <div class="box" style="height:56px"></div>
+        <div class="box" style="height:6px"></div>
         <div class="box" id="contact" style="height:56px"></div>
 
         <div class="box" id="contactbox">
@@ -382,15 +349,9 @@
         </div>
         <div style="height:80px"></div>
         <div id="copyright">
-            <p style="font-size: 18px;">Copyright c 2018 Sinfonia all rights reserved</p>
+            <p>Copyright c 2018 Sinfonia all rights reserved</p>
         </div>
     </div>
-    
-
-
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script> window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
@@ -406,346 +367,8 @@
     <!-- 櫻花 -->
     <script src="js/jquery-sakura.js"></script>
     <script src="js/jQueryRotateCompressed.2.1.js"></script>
-
-
-    <script>
-        // 歡迎進入網站
-        $(document).ready(() => {
-            let $wbtn = $('#welcomebtn');
-            let $fpage = $('#frontpage');
-            let $bpage = $('#backpage');
-            let $navbar = $('#navbar');
-            $bpage.hide();
-
-
-            $wbtn.on('click', () => {
-                $bpage.show();
-                $navbar.show();
-                $fpage.hide();
-                initMap();
-            })
-
-
-            // 網站banner
-            let swiper = new Swiper('#swiper-container1', {
-                slidesPerView: 1,
-                loop: true,
-                spaceBetween: 0,
-                centeredSlides: true,
-                speed: 1200,
-                followFinger: false,
-                autoplay: {
-                    delay: 3300,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        })
-
-
-
-
-        // google map
-        function initMap() {
-            let uluru = { lat: 24.1494145797341, lng: 120.68551413624573 };
-            let map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 18,
-                center: uluru
-            });
-            let marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-            });
-        }
-
-
-        // 營業時間
-        let aboutme = new Swiper('#aboutme', {
-            effect: "flip",
-            loop: true,
-            delay: 0,
-            noSwiping: true,
-            on: {
-                click: function () {
-                    aboutme.slideNext(800)
-                },
-            },
-        })
-
-        // 麵包菜單
-        let swiper_bread = new Swiper('#swiper-container-bread', {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            slidesPerColumn: 2,
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + '</span>';
-                },
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        // 蛋糕菜單
-        let swiper_cake = new Swiper('#swiper-container-cake', {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            slidesPerColumn: 2,
-            spaceBetween: 30,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + '</span>';
-                },
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        // 其他菜單
-        let swiper_other = new Swiper('#swiper-container-other', {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            slidesPerColumn: 2,
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + '</span>';
-                },
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-
-
-        // 按鈕的js
-        $(document).ready(() => {
-            let $button1 = $('#button-bread');
-            let $button2 = $('#button-cake');
-            let $button3 = $('#button-other');
-            let $button4 = $('#month-bread');
-            let $button5 = $('#month-cake');
-            let $button6 = $('#month-other');
-            let $swiper1 = $('#swiper-bread');
-            let $swiper2 = $('#swiper-cake');
-            let $swiper3 = $('#swiper-other');
-            $swiper2.hide();
-            $swiper3.hide();
-
-            $button1.on('click', () => {
-                $swiper1.show();
-                $swiper2.hide();
-                $swiper3.hide();
-            })
-
-            $button2.on('click', () => {
-                $swiper2.show();
-                $swiper1.hide();
-                $swiper3.hide();
-            })
-
-            $button3.on('click', () => {
-                $swiper3.show();
-                $swiper1.hide();
-                $swiper2.hide();
-            })
-            
-            $button4.on('click', () => {
-                $swiper1.show();
-                $swiper2.hide();
-                $swiper3.hide();
-            })
-
-            $button5.on('click', () => {
-                $swiper2.show();
-                $swiper1.hide();
-                $swiper3.hide();
-            })
-
-            $button6.on('click', () => {
-                $swiper3.show();
-                $swiper1.hide();
-                $swiper2.hide();
-            })
-        })
-
-        // 櫻花
-        $(function () {
-            $('body').sakura();
-        });
-        // $(window).load(function () {
-        //     $('body').sakura();
-        // });
-
-        //圖片連續旋轉
-        var angle = 0;
-        setInterval(function () {
-            angle += 0.5;
-            $("#mycircle").rotate(angle);
-        }, 30);
-
-        // scroll smooth
-        // Select all links with hashes
-        $('a[href*="#"]')
-            // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function (event) {
-                // On-page links
-                if (
-                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                    &
-                    location.hostname == this.hostname
-                ) {
-                    // Figure out element to scroll to
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    // Does a scroll target exist?
-                    if (target.length) {
-                        // Only prevent default if animation is actually gonna happen
-                        event.preventDefault();
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 600, function () {
-                            // Callback after animation
-                            // Must change focus!
-                            var $target = $(target);
-                            $target.focus();
-                            if ($target.is(":focus")) { // Checking if the target was focused
-                                return false;
-                            } else {
-                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                $target.focus(); // Set focus again
-                            };
-                        });
-                    }
-                }
-            });
-
-        // 啟動aos
-        AOS.init();
-
-        $(document).ready(() => {
-            $(function () {
-                $('body').click(function (evt) {
-                    if ($(evt.target).parents("#cardcontent1").length == 0 &&
-                        evt.target.id != "cardbutton1" && evt.target.id != "cardcontent1") {
-                        $('#cardcontent1').hide();
-                    }
-                    if ($("#cardcontent1").css("display") == "none" && $("#cardcontent2").css("display") == "none" && $("#cardcontent3").css("display") == "none") {
-                        $('#card1').fadeIn();
-                        $('#card2').fadeIn();
-                        $('#card3').fadeIn();
-                    }
-                });
-            });
-            $(function () {
-                $('body').click(function (evt) {
-                    if ($(evt.target).parents("#cardcontent2").length == 0 &&
-                        evt.target.id != "cardbutton2" && evt.target.id != "cardcontent2") {
-                        $('#cardcontent2').hide();
-                    }
-                    if ($("#cardcontent1").css("display") == "none" && $("#cardcontent2").css("display") == "none" && $("#cardcontent3").css("display") == "none") {
-                        $('#card1').fadeIn();
-                        $('#card2').fadeIn();
-                        $('#card3').fadeIn();
-                    }
-                });
-            });
-            $(function () {
-                $('body').click(function (evt) {
-                    if ($(evt.target).parents("#cardcontent3").length == 0 &&
-                        evt.target.id != "cardbutton3" && evt.target.id != "cardcontent3") {
-                        $('#cardcontent3').hide();
-                    }
-                    if ($("#cardcontent1").css("display") == "none" && $("#cardcontent2").css("display") == "none" && $("#cardcontent3").css("display") == "none") {
-                        $('#card1').fadeIn();
-                        $('#card2').fadeIn();
-                        $('#card3').fadeIn();
-                    }
-                });
-            });
-            
-            let $cardbutton1 = $('#cardbutton1');
-            let $cardbutton2 = $('#cardbutton2');
-            let $cardbutton3 = $('#cardbutton3');
-            let $cardcontent1 = $('#cardcontent1');
-            let $cardcontent2 = $('#cardcontent2');
-            let $cardcontent3 = $('#cardcontent3');
-            let $card1 = $('#card1');
-            let $card2 = $('#card2');
-            let $card3 = $('#card3');
-            $cardcontent1.hide();
-            $cardcontent2.hide();
-            $cardcontent3.hide();
-
-            $cardbutton1.on('click', () => {
-                $cardcontent1.fadeIn();
-                $cardcontent2.hide();
-                $cardcontent3.hide();
-                $card1.hide();
-                $card2.hide();
-                $card3.hide();
-            })
-
-            $cardbutton2.on('click', () => {
-                $cardcontent2.fadeIn();
-                $cardcontent1.hide();
-                $cardcontent3.hide();
-                $card1.hide();
-                $card2.hide();
-                $card3.hide();
-            })
-
-            $cardbutton3.on('click', () => {
-                $cardcontent3.fadeIn();
-                $cardcontent1.hide();
-                $cardcontent2.hide();
-                $card1.hide();
-                $card2.hide();
-                $card3.hide();
-            })
-            $cardcontent1.on('click', () => { 
-                $cardcontent1.hide();
-                $card1.fadeIn();
-                $card2.fadeIn();
-                $card3.fadeIn();
-            })
-            $cardcontent2.on('click', () => {
-                $cardcontent2.hide();
-                $card1.fadeIn();
-                $card2.fadeIn();
-                $card3.fadeIn();
-            })
-            $cardcontent3.on('click', () => {
-                $cardcontent3.hide();
-                $card1.fadeIn();
-                $card2.fadeIn();
-                $card3.fadeIn();
-            })
-        }); 
-    </script>
+    <!-- myscript -->
+    <script src="js/myscript.js"></script>
 </body>
 
 </html>
