@@ -111,6 +111,7 @@ let swiper_bread = new Swiper('#swiper-container-bread', {
         992: {
             slidesPerView: 1,
             slidesPerGroup: 1,
+            freeMode: false,
         }
     }
 });
@@ -137,6 +138,7 @@ let swiper_cake = new Swiper('#swiper-container-cake', {
         992: {
             slidesPerView: 1,
             slidesPerGroup: 1,
+            freeMode: false,
         }
     }
 });
@@ -162,6 +164,7 @@ let swiper_other = new Swiper('#swiper-container-other', {
         992: {
             slidesPerView: 1,
             slidesPerGroup: 1,
+            freeMode: false,
         }
     }
 });

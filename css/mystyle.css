@@ -164,6 +164,21 @@ h2{
 .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .btn-outline-warning:not(:disabled):not(.disabled):active:focus{
     color: #fff;
 }
+.bread-box{
+    height:200px;
+}
+.cake-box{
+    height:200px;
+}
+.other-box{
+    height:200px;
+}
+.list-photo-position{
+    height:200px;
+    position:relative;
+    left:50%;
+    transform: translate(-50%, 0);
+}
 /* 商品專區 分頁圖標 */
 .swiper-pagination-bullet {
     width: 20px;
@@ -177,7 +192,7 @@ h2{
 }
 .swiper-pagination-bullet-active {
     color:#fff;
-    background: green
+    background: green;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
     margin:0px 4px;
@@ -197,7 +212,12 @@ h2{
     right: 10px;
     left: auto;
 }
-
+#swiper-container-other .swiper-button-prev,#swiper-container-other .swiper-container-rtl .swiper-button-next{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23008000'%2F%3E%3C%2Fsvg%3E");
+}
+#swiper-container-other .swiper-button-next,#swiper-container-other .swiper-container-rtl .swiper-button-prev{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23008000'%2F%3E%3C%2Fsvg%3E");
+}
 /* lightbox內 字型 */
 .lb-data .lb-caption{
     font-size: 32px;
@@ -237,17 +257,14 @@ h2{
     .box {
         width: 100vw;
     }
-    #swiper-container-bread .swiper-slide{
-        position: relative;
-        left: calc(50% - 150px);
+    .bread-box{
+        background-color: orange
     }
-    #swiper-container-cake .swiper-slide{
-        position: relative;
-        left: calc(50% - 150px);
+    .cake-box{
+        background-color: orange
     }
-    #swiper-container-other .swiper-slide{
-        position: relative;
-        left: calc(50% - 150px);
+    .other-box{
+        background-color: orange
     }
     #copyright p{
         font-size: 12px;
@@ -256,5 +273,16 @@ h2{
 @media screen and (max-width: 768px) {
     #copyright p{
         font-size: 8px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .bread-box{
+        background-color: #fff
+    }
+    .cake-box{
+        background-color: #fff
+    }
+    .other-box{
+        background-color: #fff
     }
 }
