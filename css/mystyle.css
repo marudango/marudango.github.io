@@ -67,6 +67,9 @@ h2{
     background-repeat: no-repeat;
     overflow: hidden;
 }
+#smalllogo{
+    display: none;
+}
 #circlebox{
     width: calc(100vh - 56px);
     height: calc(100vh - 56px);
@@ -276,6 +279,53 @@ h2{
     }
 }
 @media screen and (max-width: 576px) {
+    #sakuratree{      
+        display: none;
+    }
+    #sakuratree:after{
+        display: none;
+    }
+    #circleboxbig{
+        width: 100vw;
+        height: 100vw;
+        background-image:url('/img/sakuratrees.jpg');
+        background-size: cover;
+    }
+    #circlebox{
+        width: calc(100vw - 56px);
+        height: calc(100vw - 56px);
+        top: 56px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #smalllogo{
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        line-height: 100px;
+        color: #C2995B;
+        font-weight: bolder;
+        font-size: 25px
+    }
+    #mycircle{
+        width: calc(100vw - 56px);
+        height: calc(100vw - 56px);
+        position: relative;
+    }
+    #my_origin{
+        width: 100vw;
+        height: 100vw;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transform: translate(0, 0);
+        font-size: 2.8vmin;
+    }
     .bread-box{
         background-color: #fff
     }
@@ -284,5 +334,25 @@ h2{
     }
     .other-box{
         background-color: #fff
+    }
+}
+@media screen and (max-width: 500px) {
+    #my_origin{
+        top: 102%;
+    }
+}
+@media screen and (max-width: 450px) {
+    #my_origin{
+        top: 104%;
+    }
+}
+@media screen and (max-width: 400px) {
+    #my_origin{
+        top: 110%;
+    }
+}
+@media screen and (max-width: 350px) {
+    #my_origin{
+        top: 118%;
     }
 }
