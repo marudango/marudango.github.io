@@ -255,11 +255,12 @@ h2{
     margin:0;
 }
 
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1130px) {
     .box {
         width: 100vw;
     }
+}
+@media screen and (max-width: 992px) {
     .bread-box{
         background-color: orange
     }
